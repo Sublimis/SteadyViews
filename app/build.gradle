@@ -20,8 +20,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
@@ -44,7 +44,7 @@ afterEvaluate {
 }
 
 dependencies {
-    implementation "com.github.Sublimis:SteadyView:1.0"
+    implementation "com.github.Sublimis:SteadyView:1.2"
     implementation "androidx.constraintlayout:constraintlayout:latest.release"
     implementation "androidx.coordinatorlayout:coordinatorlayout:latest.release"
     implementation "androidx.drawerlayout:drawerlayout:latest.release"
