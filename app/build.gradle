@@ -44,7 +44,7 @@ afterEvaluate {
 }
 
 dependencies {
-    implementation "com.github.Sublimis:SteadyView:0.91"
+    implementation "com.github.Sublimis:SteadyView:1.0"
     implementation "androidx.constraintlayout:constraintlayout:latest.release"
     implementation "androidx.coordinatorlayout:coordinatorlayout:latest.release"
     implementation "androidx.drawerlayout:drawerlayout:latest.release"
