@@ -24,32 +24,32 @@ import lib.sublimis.steadyview.ISteadyView;
 
 public class SteadyMotionLayout extends MotionLayout implements ISteadyView
 {
-   public SteadyMotionLayout(final Context context)
-   {
-      super(context);
+	public SteadyMotionLayout(final Context context)
+	{
+		super(context);
 
-      ISteadyView.super.initSteadyView();
-   }
+		ISteadyView.super.initSteadyView();
+	}
 
-   public SteadyMotionLayout(final Context context, @Nullable final AttributeSet attrs)
-   {
-      super(context, attrs);
+	public SteadyMotionLayout(final Context context, @Nullable final AttributeSet attrs)
+	{
+		super(context, attrs);
 
-      ISteadyView.super.initSteadyView();
-   }
+		ISteadyView.super.initSteadyView();
+	}
 
-   public SteadyMotionLayout(final Context context, @Nullable final AttributeSet attrs, final int defStyleAttr)
-   {
-      super(context, attrs, defStyleAttr);
+	public SteadyMotionLayout(final Context context, @Nullable final AttributeSet attrs, final int defStyleAttr)
+	{
+		super(context, attrs, defStyleAttr);
 
-      ISteadyView.super.initSteadyView();
-   }
+		ISteadyView.super.initSteadyView();
+	}
 
-   @Override
-   public boolean performAccessibilityAction(final int action, @Nullable final Bundle arguments)
-   {
-      final boolean status = ISteadyView.super.performSteadyViewAction(action, arguments);
+	@Override
+	public boolean performAccessibilityAction(final int action, @Nullable final Bundle arguments)
+	{
+		final boolean status = ISteadyView.super.performSteadyViewAction(action, arguments);
 
-      return super.performAccessibilityAction(action, arguments) || status;
-   }
+		return super.performAccessibilityAction(action, arguments) || status;
+	}
 }

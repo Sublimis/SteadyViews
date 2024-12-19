@@ -26,46 +26,46 @@ import lib.sublimis.steadyview.ISteadyView;
 public class SteadyWebView extends WebView implements ISteadyView
 {
 
-   public SteadyWebView(@NonNull final Context context)
-   {
-      super(context);
+	public SteadyWebView(@NonNull final Context context)
+	{
+		super(context);
 
-      ISteadyView.super.initSteadyView();
-   }
+		ISteadyView.super.initSteadyView();
+	}
 
-   public SteadyWebView(@NonNull final Context context, @Nullable final AttributeSet attrs)
-   {
-      super(context, attrs);
+	public SteadyWebView(@NonNull final Context context, @Nullable final AttributeSet attrs)
+	{
+		super(context, attrs);
 
-      ISteadyView.super.initSteadyView();
-   }
+		ISteadyView.super.initSteadyView();
+	}
 
-   public SteadyWebView(@NonNull final Context context, @Nullable final AttributeSet attrs, final int defStyleAttr)
-   {
-      super(context, attrs, defStyleAttr);
+	public SteadyWebView(@NonNull final Context context, @Nullable final AttributeSet attrs, final int defStyleAttr)
+	{
+		super(context, attrs, defStyleAttr);
 
-      ISteadyView.super.initSteadyView();
-   }
+		ISteadyView.super.initSteadyView();
+	}
 
-   public SteadyWebView(@NonNull final Context context, @Nullable final AttributeSet attrs, final int defStyleAttr, final int defStyleRes)
-   {
-      super(context, attrs, defStyleAttr, defStyleRes);
+	public SteadyWebView(@NonNull final Context context, @Nullable final AttributeSet attrs, final int defStyleAttr, final int defStyleRes)
+	{
+		super(context, attrs, defStyleAttr, defStyleRes);
 
-      ISteadyView.super.initSteadyView();
-   }
+		ISteadyView.super.initSteadyView();
+	}
 
-   public SteadyWebView(@NonNull final Context context, @Nullable final AttributeSet attrs, final int defStyleAttr, final boolean privateBrowsing)
-   {
-      super(context, attrs, defStyleAttr, privateBrowsing);
+	public SteadyWebView(@NonNull final Context context, @Nullable final AttributeSet attrs, final int defStyleAttr, final boolean privateBrowsing)
+	{
+		super(context, attrs, defStyleAttr, privateBrowsing);
 
-      ISteadyView.super.initSteadyView();
-   }
+		ISteadyView.super.initSteadyView();
+	}
 
-   @Override
-   public boolean performAccessibilityAction(final int action, @Nullable final Bundle arguments)
-   {
-      final boolean status = ISteadyView.super.performSteadyViewAction(action, arguments);
+	@Override
+	public boolean performAccessibilityAction(final int action, @Nullable final Bundle arguments)
+	{
+		final boolean status = ISteadyView.super.performSteadyViewAction(action, arguments);
 
-      return super.performAccessibilityAction(action, arguments) || status;
-   }
+		return super.performAccessibilityAction(action, arguments) || status;
+	}
 }

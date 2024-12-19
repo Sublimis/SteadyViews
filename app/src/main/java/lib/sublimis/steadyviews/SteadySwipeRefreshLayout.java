@@ -25,18 +25,18 @@ import lib.sublimis.steadyview.ISteadyView;
 
 public class SteadySwipeRefreshLayout extends SwipeRefreshLayout implements ISteadyView
 {
-   public SteadySwipeRefreshLayout(@NonNull final Context context, @Nullable final AttributeSet attrs)
-   {
-      super(context, attrs);
+	public SteadySwipeRefreshLayout(@NonNull final Context context, @Nullable final AttributeSet attrs)
+	{
+		super(context, attrs);
 
-      ISteadyView.super.initSteadyView();
-   }
+		ISteadyView.super.initSteadyView();
+	}
 
-   @Override
-   public boolean performAccessibilityAction(final int action, @Nullable final Bundle arguments)
-   {
-      final boolean status = ISteadyView.super.performSteadyViewAction(action, arguments);
+	@Override
+	public boolean performAccessibilityAction(final int action, @Nullable final Bundle arguments)
+	{
+		final boolean status = ISteadyView.super.performSteadyViewAction(action, arguments);
 
-      return super.performAccessibilityAction(action, arguments) || status;
-   }
+		return super.performAccessibilityAction(action, arguments) || status;
+	}
 }

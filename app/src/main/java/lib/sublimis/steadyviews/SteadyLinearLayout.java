@@ -24,39 +24,39 @@ import lib.sublimis.steadyview.ISteadyView;
 
 public class SteadyLinearLayout extends LinearLayout implements ISteadyView
 {
-   public SteadyLinearLayout(final Context context)
-   {
-      super(context);
+	public SteadyLinearLayout(final Context context)
+	{
+		super(context);
 
-      ISteadyView.super.initSteadyView();
-   }
+		ISteadyView.super.initSteadyView();
+	}
 
-   public SteadyLinearLayout(final Context context, @Nullable final AttributeSet attrs)
-   {
-      super(context, attrs);
+	public SteadyLinearLayout(final Context context, @Nullable final AttributeSet attrs)
+	{
+		super(context, attrs);
 
-      ISteadyView.super.initSteadyView();
-   }
+		ISteadyView.super.initSteadyView();
+	}
 
-   public SteadyLinearLayout(final Context context, @Nullable final AttributeSet attrs, final int defStyleAttr)
-   {
-      super(context, attrs, defStyleAttr);
+	public SteadyLinearLayout(final Context context, @Nullable final AttributeSet attrs, final int defStyleAttr)
+	{
+		super(context, attrs, defStyleAttr);
 
-      ISteadyView.super.initSteadyView();
-   }
+		ISteadyView.super.initSteadyView();
+	}
 
-   public SteadyLinearLayout(final Context context, final AttributeSet attrs, final int defStyleAttr, final int defStyleRes)
-   {
-      super(context, attrs, defStyleAttr, defStyleRes);
+	public SteadyLinearLayout(final Context context, final AttributeSet attrs, final int defStyleAttr, final int defStyleRes)
+	{
+		super(context, attrs, defStyleAttr, defStyleRes);
 
-      ISteadyView.super.initSteadyView();
-   }
+		ISteadyView.super.initSteadyView();
+	}
 
-   @Override
-   public boolean performAccessibilityAction(final int action, @Nullable final Bundle arguments)
-   {
-      final boolean status = ISteadyView.super.performSteadyViewAction(action, arguments);
+	@Override
+	public boolean performAccessibilityAction(final int action, @Nullable final Bundle arguments)
+	{
+		final boolean status = ISteadyView.super.performSteadyViewAction(action, arguments);
 
-      return super.performAccessibilityAction(action, arguments) || status;
-   }
+		return super.performAccessibilityAction(action, arguments) || status;
+	}
 }
