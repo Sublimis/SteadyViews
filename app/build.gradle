@@ -20,8 +20,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 }
 
@@ -34,7 +34,7 @@ afterEvaluate {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
                 // Applies the component for the release build variant.
-                from components.release
+//                from components.release
 
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'lib.sublimis.steadyviews'
@@ -44,8 +44,9 @@ afterEvaluate {
 }
 
 dependencies {
-    implementation "com.github.Sublimis:SteadyView:1.3.2"
-    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+//    implementation "com.github.Sublimis:SteadyView:1.3.2"
+    compileOnly files('../../SteadyView/app/build/outputs/aar/app-release.aar')
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
     implementation "androidx.coordinatorlayout:coordinatorlayout:1.2.0"
     implementation "androidx.drawerlayout:drawerlayout:1.2.0"
     implementation "androidx.gridlayout:gridlayout:1.0.0"

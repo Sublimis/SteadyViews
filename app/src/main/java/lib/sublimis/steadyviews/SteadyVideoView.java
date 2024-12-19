@@ -24,39 +24,39 @@ import lib.sublimis.steadyview.ISteadyView;
 
 public class SteadyVideoView extends VideoView implements ISteadyView
 {
-   public SteadyVideoView(final Context context)
-   {
-      super(context);
+	public SteadyVideoView(final Context context)
+	{
+		super(context);
 
-      ISteadyView.super.initSteadyView();
-   }
+		ISteadyView.super.initSteadyView();
+	}
 
-   public SteadyVideoView(final Context context, @Nullable final AttributeSet attrs)
-   {
-      super(context, attrs);
+	public SteadyVideoView(final Context context, @Nullable final AttributeSet attrs)
+	{
+		super(context, attrs);
 
-      ISteadyView.super.initSteadyView();
-   }
+		ISteadyView.super.initSteadyView();
+	}
 
-   public SteadyVideoView(final Context context, @Nullable final AttributeSet attrs, final int defStyleAttr)
-   {
-      super(context, attrs, defStyleAttr);
+	public SteadyVideoView(final Context context, @Nullable final AttributeSet attrs, final int defStyleAttr)
+	{
+		super(context, attrs, defStyleAttr);
 
-      ISteadyView.super.initSteadyView();
-   }
+		ISteadyView.super.initSteadyView();
+	}
 
-   public SteadyVideoView(final Context context, @Nullable final AttributeSet attrs, final int defStyleAttr, final int defStyleRes)
-   {
-      super(context, attrs, defStyleAttr, defStyleRes);
+	public SteadyVideoView(final Context context, @Nullable final AttributeSet attrs, final int defStyleAttr, final int defStyleRes)
+	{
+		super(context, attrs, defStyleAttr, defStyleRes);
 
-      ISteadyView.super.initSteadyView();
-   }
+		ISteadyView.super.initSteadyView();
+	}
 
-   @Override
-   public boolean performAccessibilityAction(final int action, @Nullable final Bundle arguments)
-   {
-      final boolean status = ISteadyView.super.performSteadyViewAction(action, arguments);
+	@Override
+	public boolean performAccessibilityAction(final int action, @Nullable final Bundle arguments)
+	{
+		final boolean status = ISteadyView.super.performSteadyViewAction(action, arguments);
 
-      return super.performAccessibilityAction(action, arguments) || status;
-   }
+		return super.performAccessibilityAction(action, arguments) || status;
+	}
 }
